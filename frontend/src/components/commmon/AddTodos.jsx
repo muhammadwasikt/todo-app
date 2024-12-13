@@ -16,7 +16,7 @@ const AddTodos = () => {
     const onSubmit = (data) => {
         
         // Add data object sending to API
-        axios.post('http://localhost:7000/todos/add' , data)
+        axios.post('https://todoappapi.vercel.app/todos/add' , data)
 
         // Reset form after successful submission
         reset()

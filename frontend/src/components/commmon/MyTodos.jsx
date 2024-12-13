@@ -8,7 +8,7 @@ const MyTodos = () => {
   // create a function for fatching data from api
   const addPostData = async () => {
     try {
-      const response = await axios.get('http://localhost:7000/todos')
+      const response = await axios.get('https://todoappapi.vercel.app/todos')
       // add data to state
       setData(response?.data.data)
     } catch (error) {
@@ -21,7 +21,7 @@ const MyTodos = () => {
   }, [addPostData])
 
   const handleDeleteData = async (item) => {
-    const response = await axios.delete(`http://localhost:7000/todos/delete/${item._id}`)
+    const response = await axios.delete(`https://todoappapi.vercel.app/todos/delete/${item._id}`)
     console.log(response)
   }
 
