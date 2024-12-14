@@ -43,7 +43,9 @@ const MyTodos = () => {
               </div>
             </div>
           )
-        }) : <p className="text-2xl font-bold text-red-500">No Data Found</p>
+        }) : <div className="w-full min-h-[80vh] flex justify-center items-center">
+          <div className="loader"></div>
+        </div>
       }
     </div>
   )

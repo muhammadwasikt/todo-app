@@ -4,4 +4,5 @@ export const enums = {
     SUCCESS_MSG : "Added successfully",
     DELETE_MSG:"Delelted Successfully",
     UPDATE_MSG:"Updated Successfully",
+    
 }

@@ -23,7 +23,7 @@ const AddTodos = () => {
     }
 
     return (
-        <div className="w-full flex justify-center p-2">
+        <div className="w-full flex justify-center p-2 items-center min-h-[80vh]">
             <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-3 max-w-[450px] w-full shadow-xl p-3">
                 <label className="input input-bordered flex items-center gap-2">
                     <input {...register("title", { required: true })} placeholder="Title" className="w-full" />
